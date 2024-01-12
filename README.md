@@ -1,250 +1,225 @@
-[![SuperTokens banner](https://raw.githubusercontent.com/supertokens/supertokens-logo/master/images/Artboard%20%E2%80%93%2027%402x.png)](https://supertokens.com/)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://supertokens.com/" rel="nofollow"><img src="https://raw.githubusercontent.com/supertokens/supertokens-logo/master/images/Artboard%20%E2%80%93%2027%402x.png" alt="超级代币横幅" style="max-width: 100%;"></a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-open-source-auth-provider" class="anchor" aria-hidden="true" tabindex="-1" href="#open-source-auth-provider"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源授权提供商</font></font></h1>
+<a href="https://supertokens.io/discord" rel="nofollow">
+<img src="https://camo.githubusercontent.com/08e3b0c53fc50b1683b39ee38bc8e96990a012e8d6901eae13e9cf6e2b5a55c1/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f3630333436363136343231393238313432302e7376673f6c6f676f3d646973636f7264" alt="在 Discord 上聊天" data-canonical-src="https://img.shields.io/discord/603466164219281420.svg?logo=discord" style="max-width: 100%;"></a>
+<span><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/4ff663589b787293ab0b83926cc305febb1abd7fad7600607d99d5341cd248c5/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f7375706572746f6b656e732f7375706572746f6b656e732d706f737467726573716c2e737667"><img src="https://camo.githubusercontent.com/4ff663589b787293ab0b83926cc305febb1abd7fad7600607d99d5341cd248c5/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f7375706572746f6b656e732f7375706572746f6b656e732d706f737467726573716c2e737667" alt="Docker 拉取统计数据" data-canonical-src="https://img.shields.io/docker/pulls/supertokens/supertokens-postgresql.svg" style="max-width: 100%;"></a></span>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为您的应用程序添加</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全登录和会话管理</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">适用于流行语言和前端框架的</font></font><a href="https://supertokens.com/docs/community/sdks" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SDK ，例如 Node.js、Go、Python、React.js、React Native、Vanilla JS 等。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3a5fb3d27d6e5e717d4d2426e46560eab6806ac7953f16694a506449b105e20d/68747470733a2f2f7375706572746f6b656e732e636f6d2f696d672f6172636869746563747572652f73656c665f686f737465645f67656e657269632e706e67"><img src="https://camo.githubusercontent.com/3a5fb3d27d6e5e717d4d2426e46560eab6806ac7953f16694a506449b105e20d/68747470733a2f2f7375706572746f6b656e732e636f6d2f696d672f6172636869746563747572652f73656c665f686f737465645f67656e657269632e706e67" alt="架构图" data-canonical-src="https://supertokens.com/img/architecture/self_hosted_generic.png" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Supertokens 架构经过优化，可为您的用户添加安全身份验证，而不会影响用户和开发人员体验</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SuperTokens 架构的三个构建块</font></font></strong></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">前端 SDK：管理会话令牌并呈现登录 UI 小部件</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">后端 SDK：提供用于注册、登录、注销、会话刷新等 API。您的前端将与这些 API 对话</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SuperTokens Core：用于核心身份验证逻辑和数据库操作的 HTTP 服务。</font><font style="vertical-align: inherit;">该服务由后端SDK使用</font></font></li>
+</ol>
+<h2 tabindex="-1" dir="auto"><a id="user-content-features" class="anchor" aria-hidden="true" tabindex="-1" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2>
+<p dir="auto"><a href="https://supertokens.com/docs/guides" rel="nofollow"><img src="/supertokens/supertokens-core/raw/master/.github/click-here-to-get-started.png" alt="点击这里开始" style="max-width: 100%;"></a></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无密码登录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社交登录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮箱 密码 登录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手机密码登录</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会话管理</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多重身份验证</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多租户/组织支持（企业 SSO）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户角色</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微服务认证</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-learn-more" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/supertokens/supertokens-core#-what-is-supertokens"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🚀 什么是超级代币？</font></font></a>
+<ul dir="auto">
+<li><a href="https://github.com/supertokens/supertokens-core#philosophy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">哲学</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#features---click-here-to-see-the-demo-app"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能+演示应用程序</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://github.com/supertokens/supertokens-core#%EF%B8%8F-architecture"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🏗️建筑</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#-why-java"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">☕ 为什么选择 Java？</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#-user-management-dashboard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⌨️ 用户管理仪表板</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#-supertokens-vs-others"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔥 超级代币与其他代币</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#%EF%B8%8F-building-from-source"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🛠️ 从源头构建</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#-community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👥 社区</font></font></a>
+<ul dir="auto">
+<li><a href="https://github.com/supertokens/supertokens-core#contributors-across-all-supertokens-repositories"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://github.com/supertokens/supertokens-core#-contributing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👩&zwj;💻 贡献</font></font></a></li>
+<li><a href="https://github.com/supertokens/supertokens-core#-license"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📝 许可证</font></font></a></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-if-you-like-our-project-please-star2-this-repository-for-feedback-feel-free-to-join-our-discord-or-create-an-issue-on-this-repo" class="anchor" aria-hidden="true" tabindex="-1" href="#if-you-like-our-project-please-star2-this-repository-for-feedback-feel-free-to-join-our-discord-or-create-an-issue-on-this-repo"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您喜欢我们的项目，请🌟这个存储库！</font><font style="vertical-align: inherit;">如需反馈，请随时加入我们的</font></font><a href="https://supertokens.io/discord" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Discord</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，或在此存储库上创建问题</font></font></h3>
+<h2 tabindex="-1" dir="auto"><a id="user-content--what-is-supertokens" class="anchor" aria-hidden="true" tabindex="-1" href="#-what-is-supertokens"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🚀 什么是超级代币？</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SuperTokens 是 Auth0 或 AWS Cognito 等专有登录提供商的开放核心替代方案。</font><font style="vertical-align: inherit;">我们与众不同，因为我们提供：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源：SuperTokens可以永久免费使用，用户数量没有限制。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地部署，以便您使用自己的数据库控制 100% 的用户数据。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有登录、注册、用户和会话管理功能的端到端解决方案，没有 OAuth 协议的所有复杂性。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">易于实施且安全性更高。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可扩展性：任何人都可以做出贡献并使 SuperTokens 变得更好！</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-philosophy" class="anchor" aria-hidden="true" tabindex="-1" href="#philosophy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">哲学</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">身份验证直接影响任何应用程序的用户体验、开发体验和安全性。</font><font style="vertical-align: inherit;">我们认为，当前的解决方案无法针对所有三个“支柱”进行优化，导致许多应用程序手动滚动自己的 auth。</font><font style="vertical-align: inherit;">这不仅会导致安全问题，而且还会浪费大量时间。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们想要改变这一点 - 我们相信唯一的方法是提供一个具有正确抽象级别的解决方案，为您提供最大程度的控制，安全且易于使用 - 就像您自己从头开始构建它一样（减去学习、构建和维护的时间）。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们还相信最少供应商锁定的原则。</font><font style="vertical-align: inherit;">您对用户数据的完全控制意味着您可以放弃 SuperTokens，而无需强迫现有用户注销、重置密码，或者在最坏的情况下重新注册。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-click-here-to-see-the-demo-app" class="anchor" aria-hidden="true" tabindex="-1" href="#click-here-to-see-the-demo-app"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><a href="https://thirdpartyemailpassword.demo.supertokens.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看演示应用程序。</font></font></h3>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请访问</font></font><a href="https://supertokens.io/pricing" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的网站</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看功能列表。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们希望使功能尽可能解耦。</font><font style="vertical-align: inherit;">这意味着您可以使用 SuperToken 仅用于登录，或仅用于会话管理，或两者兼而有之。</font><font style="vertical-align: inherit;">事实上，我们还提供与其他登录提供商（如 Auth0）的会话管理集成。</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-documentation" class="anchor" aria-hidden="true" tabindex="-1" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://supertokens.io/docs/community/introduction" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些文档可以在我们的网站上</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">看到</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/supertokens/supertokens-core/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub wiki 部分</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上有有关 SuperToken 的更多信息</font><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-architecture" class="anchor" aria-hidden="true" tabindex="-1" href="#️-architecture"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🏗️建筑</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://supertokens.io/docs/community/architecture" rel="nofollow"><font style="vertical-align: inherit;">请在此处</font></a><font style="vertical-align: inherit;">找到架构图</font></font><a href="https://supertokens.io/docs/community/architecture" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欲了解更多信息，请访问我们的</font></font><a href="https://github.com/supertokens/supertokens-core/wiki/SuperTokens-Architecture"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub wiki 部分</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></strong></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--why-java" class="anchor" aria-hidden="true" tabindex="-1" href="#-why-java"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">☕ 为什么选择 Java？</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✅ 虽然运行 Java 看起来很困难，但我们在分发时提供了 JDK 以及二进制/docker 映像。</font><font style="vertical-align: inherit;">这使得运行 SuperTokens 就像运行任何其他 HTTP 微服务一样。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✅ Java 拥有非常成熟的生态系统。</font><font style="vertical-align: inherit;">这意味着第三方库已经过考验。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✅ Java 的强类型系统确保了更少的错误和更容易的可维护性。</font><font style="vertical-align: inherit;">当许多人需要从事同一个项目时，这一点尤其重要。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✅ 我们的团队对 Java 最为熟悉，并且招聘优秀的 Java 开发人员也相对容易。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✅ Java 最大的批评之一是内存使用。</font><font style="vertical-align: inherit;">对此我们有三种解决方案：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最常见的与身份验证相关的操作是会话验证 - 这发生在后端 SDK（node、python、Go）内，无需联系 Java 核心。</font><font style="vertical-align: inherit;">因此，核心的单个实例可以相当轻松地处理数十甚至数千个用户。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们仔细选择了我们的依赖项。</font><font style="vertical-align: inherit;">例如：我们使用嵌入式 tomcat 服务器而不是更高级别的 Web 框架。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们还计划</font><font style="vertical-align: inherit;">将来使用</font></font><a href="https://www.graalvm.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GraalVM ，这可以减少 95% 的内存使用！</font></font></a><font style="vertical-align: inherit;"></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✅ 如果您需要对身份验证 API 进行任何修改，则需要在后端 SDK 级别完成这些修改（例如 Node、Golang、Python...）。</font><font style="vertical-align: inherit;">因此，您很少需要直接修改/使用此存储库中的 Java 代码。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-user-management-dashboard" class="anchor" aria-hidden="true" tabindex="-1" href="#️-user-management-dashboard"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⌨️ 用户管理仪表板</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://supertokens.com/docs/userdashboard/about" rel="nofollow"><font style="vertical-align: inherit;">使用SuperTokens 用户管理仪表板</font></a><font style="vertical-align: inherit;">监督您的用户</font></font><a href="https://supertokens.com/docs/userdashboard/about" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-list-users" class="anchor" aria-hidden="true" tabindex="-1" href="#list-users"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列出用户</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列出已注册您的应用程序的所有用户。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/supertokens/supertokens-core/blob/master/.github/list-user.png"><img src="/supertokens/supertokens-core/raw/master/.github/list-user.png" alt="列出 SuperTokens 用户" style="max-width: 100%;"></a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-manage-users" class="anchor" aria-hidden="true" tabindex="-1" href="#manage-users"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理用户</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过修改或删除用户的会话、元数据、角色和帐户信息来管理用户。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/supertokens/supertokens-core/blob/master/.github/user-info.png"><img src="/supertokens/supertokens-core/raw/master/.github/user-info.png" alt="管理用户" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--supertokens-vs-others" class="anchor" aria-hidden="true" tabindex="-1" href="#-supertokens-vs-others"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔥 SuperTokens 对比其他</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://supertokens.io/pricing#comparison-chart" rel="nofollow"><font style="vertical-align: inherit;">请在我们的网站上</font></a><font style="vertical-align: inherit;">找到详细的比较图</font></font><a href="https://supertokens.io/pricing#comparison-chart" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-building-from-source" class="anchor" aria-hidden="true" tabindex="-1" href="#️-building-from-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🛠️ 从源头构建</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅我们的</font></font><a href="https://github.com/supertokens/supertokens-core/wiki/Building-from-source"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wiki</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取说明。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--community" class="anchor" aria-hidden="true" tabindex="-1" href="#-community"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👥 社区</font></font></h2>
+<ul dir="auto">
+<li><a href="https://supertokens.io/discord" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不和谐</font></font></a></li>
+<li><a href="mailto:team@supertokens.io"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您认为这是一个您将来可以使用的项目，请🌟这个存储库！</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-contributors-across-all-supertokens-repositories" class="anchor" aria-hidden="true" tabindex="-1" href="#contributors-across-all-supertokens-repositories"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者（跨所有 SuperTokens 存储库）</font></font></h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 
-# Open-Source auth provider
-
-<a href="https://supertokens.io/discord">
-<img src="https://img.shields.io/discord/603466164219281420.svg?logo=discord"
-    alt="chat on Discord"></a>
-<span><img src="https://img.shields.io/docker/pulls/supertokens/supertokens-postgresql.svg" alt="Docker pull stats"/></span>
-
-Add **secure login and session management** to your apps. [SDKs available](https://supertokens.com/docs/community/sdks) for popular languages and front-end frameworks e.g. Node.js, Go, Python, React.js, React Native, Vanilla JS, etc.
-
-![Architecture Diagram](https://supertokens.com/img/architecture/self_hosted_generic.png)
-Supertokens architecture is optimized to add secure authentication for your users without compromising on user and developer experience
-
-**Three building blocks of SuperTokens architecture**
-
-1. Frontend SDK: Manages session tokens and renders login UI widgets
-2. Backend SDK: Provides APIs for sign-up, sign-in, signout, session refreshing, etc. Your Frontend will talk to these APIs
-3. SuperTokens Core: The HTTP service for the core auth logic and database operations. This service is used by the Backend SDK
-
-## Features
-
-[![Click here to get started](.github/click-here-to-get-started.png)](https://supertokens.com/docs/guides)
-
-* Passwordless Login
-* Social Login
-* Email Password Login
-* Phone Password Login
-* Session Management
-* Multi-Factor Authentication
-* Multi Tenancy / Organization Support (Enterprise SSO)
-* User Roles
-* Microservice Authentication
-
-
-## Learn more
-- [🚀 What is SuperTokens?](https://github.com/supertokens/supertokens-core#-what-is-supertokens)
-    - [Philosophy](https://github.com/supertokens/supertokens-core#philosophy)
-    - [Features + Demo app](https://github.com/supertokens/supertokens-core#features---click-here-to-see-the-demo-app)
-    - [Documentation](https://github.com/supertokens/supertokens-core#documentation)
-- [🏗️ Architecture](https://github.com/supertokens/supertokens-core#%EF%B8%8F-architecture)
-- [☕ Why Java?](https://github.com/supertokens/supertokens-core#-why-java)
-- [⌨️ User Management Dashboard](https://github.com/supertokens/supertokens-core#-user-management-dashboard) 
-- [🔥 SuperTokens vs Others](https://github.com/supertokens/supertokens-core#-supertokens-vs-others)
-- [🛠️ Building from source](https://github.com/supertokens/supertokens-core#%EF%B8%8F-building-from-source)
-- [👥 Community](https://github.com/supertokens/supertokens-core#-community)
-    - [Contributors](https://github.com/supertokens/supertokens-core#contributors-across-all-supertokens-repositories)
-- [👩‍💻 Contributing](https://github.com/supertokens/supertokens-core#-contributing)
-- [📝 License](https://github.com/supertokens/supertokens-core#-license)
-
-### If you like our project, please :star2: this repository! For feedback, feel free to join our [Discord](https://supertokens.io/discord), or create an issue on this repo
-
-## 🚀 What is SuperTokens?
-SuperTokens is an open-core alternative to proprietary login providers like Auth0 or AWS Cognito. We are
- different because we offer:
-- Open source: SuperTokens can be used for free, forever, with no limits on the number of users.
-- An on-premises deployment so that you control 100% of your user data, using your own database.
-- An end-to-end solution with login, sign-ups, user and session management, without all the complexities of OAuth protocols.
-- Ease of implementation and higher security.
-- Extensibility: Anyone can contribute and make SuperTokens better!
-
-### Philosophy
-Authentication directly affects the UX, dev experience, and security of any app. We believe that
- current solutions cannot optimize for all three "pillars", leading to many
-  applications hand-rolling their own auth. This not only leads to security issues but is also a massive
-   time drain.
-  
-We want to change that - we believe the only way is to provide a solution that has the right level of
- abstraction gives you maximum control, is secure, and is simple to use - just like if you build it yourself,
-  from scratch (minus the time to learn, build, and maintain).
-  
-We also believe in the principle of least vendor lock-in. Your having full control of your user's data means that you can switch away from SuperTokens without forcing your existing users to logout, reset their passwords, or in the worst case, sign up again. 
-
-### [Click here](https://thirdpartyemailpassword.demo.supertokens.io/) to see the demo app.
-- Please visit [our website](https://supertokens.io/pricing) to see the list of features.
-- We want to make features as decoupled as possible. This means you can use SuperTokens for just login, or just session management, or both. In fact, we also offer session management integrations with other login providers like Auth0.
-
-
-### Documentation
-The docs can be seen [on our website](https://supertokens.io/docs/community/introduction).
-
-There is more information about SuperTokens on the [GitHub wiki section](https://github.com/supertokens/supertokens-core/wiki).
-
-## 🏗️ Architecture
-Please find an [architecture diagram here](https://supertokens.io/docs/community/architecture)
-
-**For more information, please visit our [GitHub wiki section](https://github.com/supertokens/supertokens-core/wiki/SuperTokens-Architecture).**
-
-## ☕ Why Java?
-- ✅ Whilst running Java can seem difficult, we provide the JDK along with the binary/docker image when distributing it. This makes running SuperTokens just like running any other HTTP microservice.
-- ✅ Java has a very mature ecosystem. This implies that third-party libraries have been battle-tested.
-- ✅ Java's strong type system ensures fewer bugs and easier maintainability. This is especially important when many people are expected to work on the same project.
-- ✅ Our team is most comfortable with Java and hiring great Java developers is relatively easy as well.
-- ✅ One of the biggest criticisms of Java is memory usage. We have three solutions to this: 
-   - The most frequent auth-related operation is session verification - this happens within the backend SDK (node, python, Go) without contacting the Java core. Therefore, a single instance of the core can handle several 10s of thousands of users fairly easily.
-   - We have carefully chosen our dependencies. For eg: we use an embedded tomcat server instead of a higher-level web framework.
-   - We also plan on using [GraalVM](https://www.graalvm.org/) in the future and this can reduce memory usage by 95%! 
-- ✅ If you require any modifications to the auth APIs, those would need to be done on the backend SDK level (for example Node, Golang, Python..). So you’d rarely need to directly modify/work  with the Java code in this repo.
-
-## ⌨️ User Management Dashboard
-
-Oversee your users with the [SuperTokens User Management Dashboard](https://supertokens.com/docs/userdashboard/about)
-
-
-### List users
-
-List all the users who have signed up to your application.
-
-![List SuperTokens users](.github/list-user.png)
-
-### Manage users
-
-Manage users by modifying or deleting their sessions, metadata, roles and account info. 
-
-![Manage users](.github/user-info.png)
-
-## 🔥 SuperTokens vs others
-Please find a detailed comparison chart [on our website](https://supertokens.io/pricing#comparison-chart)
-
-## 🛠️ Building from source
-Please see our [wiki](https://github.com/supertokens/supertokens-core/wiki/Building-from-source) for instructions.
-
-## 👥 Community
-- [Discord](https://supertokens.io/discord)
-- [Email](mailto:team@supertokens.io)
-
-If you think this is a project you could use in the future, please :star2: this repository!
-
-### Contributors (across all SuperTokens repositories)
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/rishabhpoddar"><img src="https://avatars1.githubusercontent.com/u/2976287?s=460&u=d0cf2463df96fbdf1138cf74f88d7cf41415b238&v=4" width="100px;" alt=""/><br /><sub><b>Rishabh Poddar</b></sub></a></td>
-    <td align="center"><a href="https://twitter.com/Advait_Ruia"><img src="https://pbs.twimg.com/profile_images/1261970454685900800/ALVzsBQJ_400x400.jpg" width="100px;" alt=""/><br /><sub><b>Advait Ruia</b></sub></a></td>
-    <td align="center"><a href="https://github.com/bhumilsarvaiya"><img src="https://avatars2.githubusercontent.com/u/21988812?s=460&u=c0bcde60a8bf1a99baafced55dd1a8d901fa7e4a&v=4" width="100px;" alt=""/><br /><sub><b>Bhumil Sarvaiya</b></sub></a></td>
-    <td align="center"><a href="https://github.com/jscyo"><img src="https://i.stack.imgur.com/frlIf.png" width="100px;" alt=""/><br /><sub><b>Joel Coutinho</b></sub></a></td> 
+茂文山</font></font><table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/rishabhpoddar"><img src="https://avatars1.githubusercontent.com/u/2976287?s=460&amp;u=d0cf2463df96fbdf1138cf74f88d7cf41415b238&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">里沙卜·波达</font></font></b></sub></a></td>
+    <td align="center"><a href="https://twitter.com/Advait_Ruia" rel="nofollow"><img src="https://camo.githubusercontent.com/276f1cdb01311f3073967922bbb25020486e8d3bd6d319a91a4826e2dc0f7d9c/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313236313937303435343638353930303830302f414c567a7342514a5f343030783430302e6a7067" width="100px;" alt="" data-canonical-src="https://pbs.twimg.com/profile_images/1261970454685900800/ALVzsBQJ_400x400.jpg" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿德瓦特·鲁亚</font></font></b></sub></a></td>
+    <td align="center"><a href="https://github.com/bhumilsarvaiya"><img src="https://avatars2.githubusercontent.com/u/21988812?s=460&amp;u=c0bcde60a8bf1a99baafced55dd1a8d901fa7e4a&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">普密尔·萨尔瓦亚</font></font></b></sub></a></td>
+    <td align="center"><a href="https://github.com/jscyo"><img src="https://camo.githubusercontent.com/f348634eb9ce3d62cf394a135b94751340582aa79fcd74863ea7b634e03bfb4f/68747470733a2f2f692e737461636b2e696d6775722e636f6d2f66726c49662e706e67" width="100px;" alt="" data-canonical-src="https://i.stack.imgur.com/frlIf.png" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">乔尔·库蒂尼奥</font></font></b></sub></a></td> 
   </tr>
   <tr>
-   <td align="center"><a href="https://github.com/RakeshUP"><img src="https://avatars1.githubusercontent.com/u/20946466?s=400&u=01d7d6d701eedd8345e491172e3af04578d18113&v=4" width="100px;" alt=""/><br /><sub><b>Rakesh UP</b></sub></a></td>
-   <td align="center"><a href="https://twitter.com/mufassirkazi"><img src="https://i.stack.imgur.com/frlIf.png" width="100px;" alt=""/><br /><sub><b>Mufassir Kazi</b></sub></a></td>
-<td align="center"><a href="https://github.com/nkshah2"><img src="https://avatars2.githubusercontent.com/u/18233774?s=400&u=5befa41674cfcd6c6060103360ab323cdfa24dcb&v=4" width="100px;" alt=""/><br /><sub><b>Nemi Shah</b></sub></a></td>
-<td align="center"><a href="https://github.com/irohitb"><img src="https://avatars3.githubusercontent.com/u/32276134?s=400&u=0b72f6c4e6cfa749229a8e69ed86acb720a384e7&v=4" width="100px;" alt=""/><br /><sub><b>Rohit Bhatia</b></sub></a></td>
+   <td align="center"><a href="https://github.com/RakeshUP"><img src="https://avatars1.githubusercontent.com/u/20946466?s=400&amp;u=01d7d6d701eedd8345e491172e3af04578d18113&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拉克什UP</font></font></b></sub></a></td>
+   <td align="center"><a href="https://twitter.com/mufassirkazi" rel="nofollow"><img src="https://camo.githubusercontent.com/f348634eb9ce3d62cf394a135b94751340582aa79fcd74863ea7b634e03bfb4f/68747470733a2f2f692e737461636b2e696d6775722e636f6d2f66726c49662e706e67" width="100px;" alt="" data-canonical-src="https://i.stack.imgur.com/frlIf.png" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">穆法西尔·卡齐</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/nkshah2"><img src="https://avatars2.githubusercontent.com/u/18233774?s=400&amp;u=5befa41674cfcd6c6060103360ab323cdfa24dcb&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内米·沙阿</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/irohitb"><img src="https://avatars3.githubusercontent.com/u/32276134?s=400&amp;u=0b72f6c4e6cfa749229a8e69ed86acb720a384e7&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">罗希特·巴蒂亚</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/mmaha"><img src="https://avatars3.githubusercontent.com/u/297517?s=400&u=8c41caf46c511ed2054c3d14c23193eda0d996af&v=4" width="100px;" alt=""/><br /><sub><b>Madhu Mahadevan</b></sub></a></td>
-<td align="center"><a href="https://github.com/nugmanoff"><img src="https://avatars3.githubusercontent.com/u/20473743?s=460&u=2d33e10df1e8c3f38328e6e92d753363026f660f&v=4" width="100px;" alt=""/><br /><sub><b>Aidar Nugmanoff</b></sub></a></td>
-<td align="center"><a href="https://github.com/arnxv0"><img src="https://avatars2.githubusercontent.com/u/57629464?s=460&u=5f0cca1aed9fabb38bea74df73ed99dfcfec2f26&v=4" width="100px;" alt=""/><br /><sub><b>Arnav Dewan</b></sub></a></td>
-<td align="center"><a href="https://github.com/NkxxkN"><img src="https://avatars1.githubusercontent.com/u/5072452?s=460&u=eda6b25b674d20e3389bf19a0619d6e4c1e46670&v=4" width="100px;" alt=""/><br /><sub><b>NkxxkN</b></sub></a></td>
+<td align="center"><a href="https://github.com/mmaha"><img src="https://avatars3.githubusercontent.com/u/297517?s=400&amp;u=8c41caf46c511ed2054c3d14c23193eda0d996af&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">马杜·马哈德万</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/nugmanoff"><img src="https://avatars3.githubusercontent.com/u/20473743?s=460&amp;u=2d33e10df1e8c3f38328e6e92d753363026f660f&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾达尔·努格玛诺夫</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/arnxv0"><img src="https://avatars2.githubusercontent.com/u/57629464?s=460&amp;u=5f0cca1aed9fabb38bea74df73ed99dfcfec2f26&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿尔纳夫·德万</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/NkxxkN"><img src="https://avatars1.githubusercontent.com/u/5072452?s=460&amp;u=eda6b25b674d20e3389bf19a0619d6e4c1e46670&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NkxxkN</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/UbadahJ"><img src="https://avatars1.githubusercontent.com/u/26687928?s=460&u=ae1d3ae5fad6e4cfa71809f8ce4a99429321dcaf&v=4" width="100px;" alt=""/><br /><sub><b>LordChadiwala</b></sub></a></td>
-<td align="center"><a href="https://github.com/LuizDoPc"><img src="https://avatars0.githubusercontent.com/u/20651653?s=460&u=d673e5357da83e446311831efe107e695d3ef875&v=4" width="100px;" alt=""/><br /><sub><b>Luiz Soares</b></sub></a></td>
-<td align="center"><a href="https://github.com/sudiptog81"><img src="https://avatars0.githubusercontent.com/u/11232940?s=460&u=07b4989ae4c43e43f35730d7f8d59631f5ed933c&v=4" width="100px;" alt=""/><br /><sub><b>Sudipto Ghosh</b></sub></a></td>
-<td align="center"><a href="https://github.com/Fabricio20"><img src="https://avatars1.githubusercontent.com/u/7545720?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Fabricio20</b></sub></a></td>
+<td align="center"><a href="https://github.com/UbadahJ"><img src="https://avatars1.githubusercontent.com/u/26687928?s=460&amp;u=ae1d3ae5fad6e4cfa71809f8ce4a99429321dcaf&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查迪瓦拉勋爵</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/LuizDoPc"><img src="https://avatars0.githubusercontent.com/u/20651653?s=460&amp;u=d673e5357da83e446311831efe107e695d3ef875&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路易斯·苏亚雷斯</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/sudiptog81"><img src="https://avatars0.githubusercontent.com/u/11232940?s=460&amp;u=07b4989ae4c43e43f35730d7f8d59631f5ed933c&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">苏迪普托·戈什</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/Fabricio20"><img src="https://avatars1.githubusercontent.com/u/7545720?s=400&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">法布里西奥20</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/metallicmonkey"><img src="https://avatars0.githubusercontent.com/u/10272154?s=460&u=b6f5daefe3f3ce49e9ed094043674a2c2718af73&v=4" width="100px;" alt=""/><br /><sub><b>metallicmonkey</b></sub></a></td>
-<td align="center"><a href="https://github.com/vidu171"><img src="https://avatars1.githubusercontent.com/u/25363324?s=460&u=8d3ccde95f49579e893c8c12db22cdcd0fea36cb&v=4" width="100px;" alt=""/><br /><sub><b>Vidhyanshu Jain</b></sub></a></td>
-<td align="center"><a href="https://github.com/dlion"><img src="https://avatars3.githubusercontent.com/u/2125236?s=460&u=801df23e89718386a099ba60e15b61a562fdf334&v=4" width="100px;" alt=""/><br /><sub><b>Domenico Luciani</b></sub></a></td>
-<td align="center"><a href="https://github.com/EnzoBtv"><img src="https://avatars1.githubusercontent.com/u/40310156?s=460&u=f7c0e017293b0d57b8340dbfae36c078f0176e1a&v=4" width="100px;" alt=""/><br /><sub><b>Enzo Batrov</b></sub></a></td>
+<td align="center"><a href="https://github.com/metallicmonkey"><img src="https://avatars0.githubusercontent.com/u/10272154?s=460&amp;u=b6f5daefe3f3ce49e9ed094043674a2c2718af73&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">金属猴</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/vidu171"><img src="https://avatars1.githubusercontent.com/u/25363324?s=460&amp;u=8d3ccde95f49579e893c8c12db22cdcd0fea36cb&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维迪亚舒·耆那教</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/dlion"><img src="https://avatars3.githubusercontent.com/u/2125236?s=460&amp;u=801df23e89718386a099ba60e15b61a562fdf334&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多梅尼科·卢西亚尼</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/EnzoBtv"><img src="https://avatars1.githubusercontent.com/u/40310156?s=460&amp;u=f7c0e017293b0d57b8340dbfae36c078f0176e1a&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">恩佐·巴特罗夫</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/IsautierEloise"><img src="https://avatars2.githubusercontent.com/u/44578188?s=400&u=2bda597af317d871d6b1017193956b40a6fe0412&v=4" width="100px;" alt=""/><br /><sub><b>Eloïse Isautier</b></sub></a></td>
-<td align="center"><a href="https://github.com/ocReaper"><img src="https://avatars2.githubusercontent.com/u/4038188?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Ákos Resch</b></sub></a></td>
-<td align="center"><a href="https://github.com/chotuchaudhary"><img src="https://avatars0.githubusercontent.com/u/14938108?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Chotu Chaudhary</b></sub></a></td>
-<td align="center"><a href="https://github.com/heracek"><img src="https://avatars.githubusercontent.com/u/7502?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Tomáš Horáček</b></sub></a></td>
+<td align="center"><a href="https://github.com/IsautierEloise"><img src="https://avatars2.githubusercontent.com/u/44578188?s=400&amp;u=2bda597af317d871d6b1017193956b40a6fe0412&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">埃洛伊斯·伊索捷</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/ocReaper"><img src="https://avatars2.githubusercontent.com/u/4038188?s=460&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿科斯·雷施</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/chotuchaudhary"><img src="https://avatars0.githubusercontent.com/u/14938108?s=460&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">乔图·乔杜里</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/heracek"><img src="https://avatars.githubusercontent.com/u/7502?s=460&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">托马斯·霍拉切克</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/sbauch"><img src="https://avatars.githubusercontent.com/u/923033?s=460&u=db9bb41f9b279750c74afc1be0ab51db05539593&v=4" width="100px;" alt=""/><br /><sub><b>Sam Bauch</b></sub></a></td>
-<td align="center"><a href="https://github.com/mirrorrim"><img src="https://avatars.githubusercontent.com/u/9555251?v=4" width="100px;" alt=""/><br /><sub><b>Alexey Tylindus</b></sub></a></td>
-<td align="center"><a href="https://github.com/gusfune"><img src="https://avatars.githubusercontent.com/u/1147240?v=4" width="100px;" alt=""/><br /><sub><b>Gus Fune</b></sub></a></td>
-<td align="center"><a href="https://github.com/chenkaiC4"><img src="https://avatars.githubusercontent.com/u/7543145?v=4" width="100px;" alt=""/><br /><sub><b>chenkaiC4</b></sub></a></td>
+<td align="center"><a href="https://github.com/sbauch"><img src="https://avatars.githubusercontent.com/u/923033?s=460&amp;u=db9bb41f9b279750c74afc1be0ab51db05539593&amp;v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">萨姆·鲍奇</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/mirrorrim"><img src="https://avatars.githubusercontent.com/u/9555251?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿列克谢·泰林杜斯</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/gusfune"><img src="https://avatars.githubusercontent.com/u/1147240?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">格斯·富内</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/chenkaiC4"><img src="https://avatars.githubusercontent.com/u/7543145?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">陈凯C4</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/dulowski-marek"><img src="https://avatars.githubusercontent.com/u/17051704?v=4" width="100px;" alt=""/><br /><sub><b>Marek Dulowski</b></sub></a></td>
-<td align="center"><a href="https://github.com/Piyushhbhutoria"><img src="https://avatars.githubusercontent.com/u/20777594?v=4" width="100px;" alt=""/><br /><sub><b>Piyushh Bhutoria</b></sub></a></td>
-<td align="center"><a href="https://github.com/aldeed"><img src="https://avatars.githubusercontent.com/u/3012067?v=4" width="100px;" alt=""/><br /><sub><b>Eric Dobbertin</b></sub></a></td>
-<td align="center"><a href="https://github.com/seniorquico"><img src="https://avatars.githubusercontent.com/u/415806?v=4" width="100px;" alt=""/><br /><sub><b>Kyle Dodson</b></sub></a></td>
+<td align="center"><a href="https://github.com/dulowski-marek"><img src="https://avatars.githubusercontent.com/u/17051704?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">马雷克·杜洛斯基</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/Piyushhbhutoria"><img src="https://avatars.githubusercontent.com/u/20777594?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">皮尤什·布托里亚</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/aldeed"><img src="https://avatars.githubusercontent.com/u/3012067?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">埃里克·多贝尔廷</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/seniorquico"><img src="https://avatars.githubusercontent.com/u/415806?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">凯尔·多德森</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/taijuten"><img src="https://avatars.githubusercontent.com/u/4288526?v=4" width="100px;" alt=""/><br /><sub><b>Ralph Lawrence</b></sub></a></td>
-<td align="center"><a href="https://github.com/christopher-kapic"><img src="https://avatars.githubusercontent.com/u/59740769?v=4" width="100px;" alt=""/><br /><sub><b>Christopher Kapic</b></sub></a></td>
-<td align="center"><a href="https://github.com/Hanzyusuf"><img src="https://avatars.githubusercontent.com/u/22171112?v=4" width="100px;" alt=""/><br /><sub><b>Hanzyusuf</b></sub></a></td>
-<td align="center"><a href="https://github.com/porcellus"><img src="https://avatars.githubusercontent.com/u/1129990?v=4" width="100px;" alt=""/><br /><sub><b>
-Mihály Lengyel</b></sub></a></td>
+<td align="center"><a href="https://github.com/taijuten"><img src="https://avatars.githubusercontent.com/u/4288526?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拉尔夫·劳伦斯</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/christopher-kapic"><img src="https://avatars.githubusercontent.com/u/59740769?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克里斯托弗·卡皮克</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/Hanzyusuf"><img src="https://avatars.githubusercontent.com/u/22171112?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">汉久苏夫</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/porcellus"><img src="https://avatars.githubusercontent.com/u/1129990?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+米哈伊·伦耶尔</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/cerino-ligutom"><img src="https://avatars.githubusercontent.com/u/6721822?v=4" width="100px;" alt=""/><br /><sub><b>Cerino O. Ligutom III</b></sub></a></td>
-<td align="center"><a href="https://github.com/nadilas"><img src="https://avatars.githubusercontent.com/u/5324856?v=4" width="100px;" alt=""/><br /><sub><b>nadilas</b></sub></a></td>
-<td align="center"><a href="https://github.com/vasica38"><img src="https://avatars.githubusercontent.com/u/26538079?v=4" width="100px;" alt=""/><br /><sub><b>Vasile Catana</b></sub></a></td>
-<td align="center"><a href="https://github.com/rossoskull"><img src="https://avatars.githubusercontent.com/u/27884543?v=4" width="100px;" alt=""/><br /><sub><b>Jay Mistry</b></sub></a></td>
+<td align="center"><a href="https://github.com/cerino-ligutom"><img src="https://avatars.githubusercontent.com/u/6721822?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">塞里诺·O·利古托姆三世</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/nadilas"><img src="https://avatars.githubusercontent.com/u/5324856?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">纳迪拉斯</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/vasica38"><img src="https://avatars.githubusercontent.com/u/26538079?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">瓦西里·卡塔纳</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/rossoskull"><img src="https://avatars.githubusercontent.com/u/27884543?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">杰·米斯特里</font></font></b></sub></a></td>
   </tr> 
   <tr>
-<td align="center"><a href="https://github.com/jacobhq"><img src="https://avatars.githubusercontent.com/u/29145479?v=4" width="100px;" alt=""/><br /><sub><b>Jacob Marshall</b></sub></a></td>
-<td align="center"><a href="https://github.com/miketromba"><img src="https://avatars.githubusercontent.com/u/25141252?v=4" width="100px;" alt=""/><br /><sub><b>miketromba</b></sub></a></td>
-<td align="center"><a href="https://github.com/olhapi"><img src="https://avatars.githubusercontent.com/u/4780263?v=4" width="100px;" alt=""/><br /><sub><b>Oleg Vdovenko</b></sub></a></td>
-<td align="center"><a href="https://github.com/siddharthmudgal"><img src="https://avatars.githubusercontent.com/u/9314217?v=4" width="100px;" alt=""/><br /><sub><b>Siddharth</b></sub></a></td>
+<td align="center"><a href="https://github.com/jacobhq"><img src="https://avatars.githubusercontent.com/u/29145479?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">雅各布·马歇尔</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/miketromba"><img src="https://avatars.githubusercontent.com/u/25141252?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">米克特隆巴</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/olhapi"><img src="https://avatars.githubusercontent.com/u/4780263?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">奥列格·弗多文科</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/siddharthmudgal"><img src="https://avatars.githubusercontent.com/u/9314217?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">悉达多</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/xuatz"><img src="https://avatars.githubusercontent.com/u/9292261?v=4" width="100px;" alt=""/><br /><sub><b>xuatz</b></sub></a></td>
-<td align="center"><a href="https://github.com/yowayb"><img src="https://avatars.githubusercontent.com/u/603829?v=4" width="100px;" alt=""/><br /><sub><b>Yoway Buorn</b></sub></a></td>
-<td align="center"><a href="https://github.com/rtpa25"><img src="https://avatars.githubusercontent.com/u/72537293?v=4" width="100px;" alt=""/><br /><sub><b>Ronit Panda</b></sub></a></td>
-<td align="center"><a href="https://github.com/anugrahsinghal"><img src="https://avatars.githubusercontent.com/u/18058884?v=4" width="100px;" alt=""/><br /><sub><b>Anugrah Singhal</b></sub></a></td>
+<td align="center"><a href="https://github.com/xuatz"><img src="https://avatars.githubusercontent.com/u/9292261?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">徐亚兹</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/yowayb"><img src="https://avatars.githubusercontent.com/u/603829?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尤威·布恩</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/rtpa25"><img src="https://avatars.githubusercontent.com/u/72537293?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">罗尼特·熊猫</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/anugrahsinghal"><img src="https://avatars.githubusercontent.com/u/18058884?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿努格拉·辛格哈尔</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/JeremyEastham"><img src="https://avatars.githubusercontent.com/u/34139712?v=4" width="100px;" alt=""/><br /><sub><b>Jeremy Eastham</b></sub></a></td>
-<td align="center"><a href="https://github.com/assafushy"><img src="https://avatars.githubusercontent.com/u/7502687?v=4" width="100px;" alt=""/><br /><sub><b>Assaf Yacobi</b></sub></a></td>
-<td align="center"><a href="https://github.com/sattvikc"><img src="https://avatars.githubusercontent.com/u/650429?v=4" width="100px;" alt=""/><br /><sub><b>Sattvik Chakravarthy</b></sub></a></td>
-<td align="center"><a href="https://github.com/opichon"><img src="https://avatars.githubusercontent.com/u/203745?v=4" width="100px;" alt=""/><br /><sub><b>Olivier Pichon</b></sub></a></td>
+<td align="center"><a href="https://github.com/JeremyEastham"><img src="https://avatars.githubusercontent.com/u/34139712?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">杰里米·伊斯特姆</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/assafushy"><img src="https://avatars.githubusercontent.com/u/7502687?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿萨夫·雅各比</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/sattvikc"><img src="https://avatars.githubusercontent.com/u/650429?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">圣泛脉轮</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/opichon"><img src="https://avatars.githubusercontent.com/u/203745?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">奥利维尔·皮尚</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/FuzzySid"><img src="https://avatars.githubusercontent.com/u/40206571?v=4" width="100px;" alt=""/><br /><sub><b>Siddhant Varma</b></sub></a></td>
-<td align="center"><a href="https://github.com/renyijiu"><img src="https://avatars.githubusercontent.com/u/8318266?v=4" width="100px;" alt=""/><br /><sub><b>renyijiu</b></sub></a></td>
-<td align="center"><a href="https://github.com/ITenthusiasm"><img src="https://avatars.githubusercontent.com/u/47364027?v=4" width="100px;" alt=""/><br /><sub><b>Isaiah Thomason</b></sub></a></td>
-<td align="center"><a href="https://github.com/utsavdotpro"><img src="https://avatars.githubusercontent.com/u/38961422?v=4" width="100px;" alt=""/><br /><sub><b>Utsav Barnwal</b></sub></a></td>
+<td align="center"><a href="https://github.com/FuzzySid"><img src="https://avatars.githubusercontent.com/u/40206571?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">西丹特·瓦尔玛</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/renyijiu"><img src="https://avatars.githubusercontent.com/u/8318266?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">人一酒</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/ITenthusiasm"><img src="https://avatars.githubusercontent.com/u/47364027?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以赛亚托马森</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/utsavdotpro"><img src="https://avatars.githubusercontent.com/u/38961422?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">乌察夫·巴恩瓦尔</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/saurabhghatnekar"><img src="https://avatars.githubusercontent.com/u/20884782?v=4" width="100px;" alt=""/><br /><sub><b>Saurabh Ghatnekar</b></sub></a></td>
-<td align="center"><a href="https://github.com/alisher-aituarov"><img src="https://avatars.githubusercontent.com/u/63276190?v=4" width="100px;" alt=""/><br /><sub><b>Alisher Aituarov</b></sub></a></td>
-<td align="center"><a href="https://github.com/wallstromsimon"><img src="https://avatars.githubusercontent.com/u/3397398?v=4" width="100px;" alt=""/><br /><sub><b>Simon Kihlberg Wallstrom</b></sub></a></td>
-<td align="center"><a href="https://github.com/AreebKhan619"><img src="https://avatars.githubusercontent.com/u/39133435?v=4" width="100px;" alt=""/><br /><sub><b>Areeb Khan</b></sub></a></td>
+<td align="center"><a href="https://github.com/saurabhghatnekar"><img src="https://avatars.githubusercontent.com/u/20884782?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">索拉布·加特内卡</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/alisher-aituarov"><img src="https://avatars.githubusercontent.com/u/63276190?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿利舍尔·艾图阿罗夫</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/wallstromsimon"><img src="https://avatars.githubusercontent.com/u/3397398?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">西蒙·基尔伯格·沃尔斯特罗姆</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/AreebKhan619"><img src="https://avatars.githubusercontent.com/u/39133435?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿雷布·汗</font></font></b></sub></a></td>
   </tr>
   <tr>
-<td align="center"><a href="https://github.com/sublimator"><img src="https://avatars.githubusercontent.com/u/525211?v=4" width="100px;" alt=""/><br /><sub><b>Nicholas Dudfield</b></sub></a></td>
-<td align="center"><a href="https://github.com/Qdea"><img src="https://avatars.githubusercontent.com/u/58660439?v=4" width="100px;" alt=""/><br /><sub><b>Qdea</b></sub></a></td>
-<td align="center"><a href="https://github.com/LukasKnuth"><img src="https://avatars.githubusercontent.com/u/692211?v=4" width="100px;" alt=""/><br /><sub><b>Lukas Knuth</b></sub></a></td>
-<td align="center"><a href="https://github.com/melvynhills"><img src="https://avatars.githubusercontent.com/u/417315?v=4" width="100px;" alt=""/><br /><sub><b>
-Melvyn Hills</b></sub></a></td>
-  <tr>
-<td align="center"><a href="https://github.com/mattanimation"><img src="https://avatars.githubusercontent.com/u/1426997?v=4" width="100px;" alt=""/><br /><sub><b>Matt Murray</b></sub></a></td>
-Melvyn Hills</b></sub></a></td>
-<td align="center"><a href="https://github.com/constantoine"><img src="https://avatars.githubusercontent.com/u/13930958?v=4" width="100px;" alt=""/><br /><sub><b>Cléo Rebert</b></sub></a></td>
-<td align="center"><a href="https://github.com/daniil-borovoy"><img src="https://avatars.githubusercontent.com/u/74528634?v=4" width="100px;" alt=""/><br /><sub><b>Daniil Borovoy</b></sub></a></td>
-<td align="center"><a href="https://github.com/kriskw1999"><img src="https://avatars.githubusercontent.com/u/71312948?v=4" width="100px;" alt=""/><br /><sub><b>Krzysztof Witkowski</b></sub></a></td>
+<td align="center"><a href="https://github.com/sublimator"><img src="https://avatars.githubusercontent.com/u/525211?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尼古拉斯·达德菲尔德</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/Qdea"><img src="https://avatars.githubusercontent.com/u/58660439?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qdea</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/LukasKnuth"><img src="https://avatars.githubusercontent.com/u/692211?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卢卡斯·高德纳</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/melvynhills"><img src="https://avatars.githubusercontent.com/u/417315?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+茂文山</font></font></b></sub></a></td>
+  </tr><tr>
+<td align="center"><a href="https://github.com/mattanimation"><img src="https://avatars.githubusercontent.com/u/1426997?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">马特·默里</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/constantoine"><img src="https://avatars.githubusercontent.com/u/13930958?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克莱奥·雷伯特</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/daniil-borovoy"><img src="https://avatars.githubusercontent.com/u/74528634?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">丹尼尔·博罗沃伊</font></font></b></sub></a></td>
+<td align="center"><a href="https://github.com/kriskw1999"><img src="https://avatars.githubusercontent.com/u/71312948?v=4" width="100px;" alt="" style="max-width: 100%;"><br><sub><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克日什托夫·维特科夫斯基</font></font></b></sub></a></td>
   </tr>
-</table>
-
-## 👩‍💻 Contributing
-Please see the [CONTRIBUTING.md](https://github.com/supertokens/supertokens-core/blob/master/CONTRIBUTING.md) file for instructions.
-
-## 📝 License
-&copy; 2020-2023 SuperTokens Inc and its contributors. All rights reserved.
-
-Portions of this software are licensed as follows:
-
-* All content that resides under the "ee/" directory of this repository, if that directory exists, is licensed under the
-  license defined in "ee/LICENSE.md".
-* All third-party components incorporated into the SuperTokens Software are licensed under the original license provided
-  by the owner of the applicable component.
-* Content outside of the above-mentioned directories or restrictions above is available under the "Apache 2.0"
-  license as defined in the level "LICENSE.md" file
+</tbody></table>
+<h2 tabindex="-1" dir="auto"><a id="user-content--contributing" class="anchor" aria-hidden="true" tabindex="-1" href="#-contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👩&zwj;💻 贡献</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/supertokens/supertokens-core/blob/master/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CONTRIBUTING.md</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件以获取说明。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--license" class="anchor" aria-hidden="true" tabindex="-1" href="#-license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📝 许可证</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2020-2023 SuperTokens Inc 及其贡献者。</font><font style="vertical-align: inherit;">版权所有。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本软件的部分内容按如下方式获得许可：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">驻留在该存储库的“ee/”目录下的所有内容（如果该目录存在）均根据“ee/LICENSE.md”中定义的许可证获得许可。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SuperTokens 软件中纳入的所有第三方组件均根据适用组件所有者提供的原始许可证获得许可。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上述目录或上述限制之外的内容可根据级别“LICENSE.md”文件中定义的“Apache 2.0”许可证使用</font></font></li>
+</ul>
+</article></div>
